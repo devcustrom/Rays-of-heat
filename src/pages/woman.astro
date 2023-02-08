@@ -1,0 +1,23 @@
+---
+import Random from "../components/random.vue";
+---
+
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Лучики тепла для девушек</title>
+		<meta name="description" content="Всем нам нужны лучики тепла здесь они есть">
+	</head>
+	<body>
+		<section class="flex min-h-screen">
+			<div class="container text-center h-max my-auto mx-auto px-5">
+				<h1 class="text-4xl font-semibold mb-10">Специально для тебя)</h1>
+				<p class="text-medium mb-10">Вдруг ты забыла или тебе этого не говорили</p>
+				<Random gender={'female'} client:load/>
+			</div>
+		</section>
+	</body>
+</html>
